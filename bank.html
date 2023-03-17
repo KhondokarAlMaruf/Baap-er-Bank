@@ -9,29 +9,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-red-200 m-0">
 
     <header>
-        <h1 class=" text-3xl text-center">let's get some <span class="text-red-600 font-bold">Mooooney</span>!!!
+        <h1 class=" text-3xl text-center pt-10">let's get some <span class="text-red-600 font-bold">Mooooney</span>!!!
         </h1>
     </header>
 
-    <body class="bg-red-200">
+    <main>
         <section class="mt-12">
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
-                    <h4 class="text-2xl ">Diposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h4 class="text-2xl ">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="total-diposit">00</span></h2>
 
                 </div>
                 <div class="bg-orange-400 p-8 rounded-xl">
                     <h4 class="text-2xl ">Withdraw</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
 
                 </div>
                 <div class="bg-violet-500 p-8 rounded-xl">
                     <h4 class="text-2xl ">Balance</h4>
-                    <h2 class="text-5xl">$1250</h2>
+                    <h2 class="text-5xl">$<span id="balance-total">1250</span></h2>
 
                 </div>
 
@@ -44,17 +44,17 @@
         <section class="mt-12">
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
-                    <h4 class="text-2xl ">Please Diposit</h4>
-                    <input class="w-9/12 block mb-2 px-3 text-rose-900" type="email" name="" id="diposit-amount"
-                        placeholder="$ Amount you want Diposit">
+                    <h4 class="text-2xl ">Please Deposit</h4>
+                    <input class="w-9/12 block mb-2 px-3 py-2 text-rose-900" type="text" name="" id="diposit-amount"
+                        placeholder="$ Amount you want Deposit">
                     <button id="btn-diposit"
-                        class="bg-violet-500 hover:bg-violet-700 px-8 py-2 text-white font-medium rounded-lg">Diposit</button>
+                        class="bg-violet-500 hover:bg-violet-700 px-8 py-2 text-white font-medium rounded-lg">Deposit</button>
 
 
                 </div>
                 <div class="bg-orange-400 p-8 rounded-xl">
                     <h4 class="text-2xl ">Please Withdraw</h4>
-                    <input class="w-9/12 block mb-2 px-3 text-rose-900" type="email" name="" id="withdraw-amount"
+                    <input class="w-9/12 block mb-2 px-3 py-2 text-rose-900" type="text" name="" id="withdraw-field"
                         placeholder="Amount you want Withdraw">
                     <button id="btn-withdraw"
                         class="bg-violet-500 hover:bg-violet-700 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
@@ -68,8 +68,9 @@
 
 
         </section>
-    </body>
-
+    </main>
+    <script src="js/bank.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
