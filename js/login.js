@@ -6,6 +6,12 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     const pass = userPass.value;
     console.log(pass);
     
+    if(email ==='maruf@gmail.com' && pass === 'maruf'){
+            window.location.href ='bank.html';
+        }
+        else{
+            alert('please enter a valid user and password')
+        }
 
 
 })
